@@ -25,7 +25,7 @@ Sub FormatSignificantResult(sheetName As String, startRow As Integer, numRows As
 - Param - startRow : The row number of where the data starts as Integer
 - Param - numRows : The number of rows contained in the spreadsheet (or number of rows wished to process). 
 - Param - pvalColIndex : The index of the column containing the p-value as Integer 
-- Param - diffColIndex : The offset from the position of the p-val column to the cell that you wish to format as Integer
+- Param - offset : The offset from the position of the p-val column to the cell that you wish to format as Integer
 - Precondition: The significant figure is based on proportions 
 - Postcondition: Cells with significant results are formatted to XX%*
 - Return: None
@@ -56,3 +56,10 @@ Sub main()
 End Sub
 
 ```
+
+# Collaborators 
+John Mezzanotte 
+
+# Ideas for Future Development 
+In the formatSignificantResults module, allow the user to pass a format to the function. This way it is more customizable and you 
+can use it in situations where you have figures other than proportions.
