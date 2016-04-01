@@ -7,8 +7,7 @@ John Mezzanotte
 1/3/2016
 
 # Overview
-Visual Basic for Applications modules that have assisted my in day-to-day analysis tasks. Some of these modules may be used for general 
-use and other modules are very custom to specific ananlysis tasks I have had. 
+Visual Basic for Applications modules that have assisted me in day-to-day analysis tasks. Some of these modules may be used for general purposes and other modules are very custom to specific ananlysis tasks I have had. 
 
 #Package Contents 
 formatSignificantResults.bas
@@ -19,7 +18,20 @@ formatSignificantResults.bas
 #Description 
 I used this module to help locate and format figures with significant results after multivariate tests have been ran on data. 
 
+#Specifications 
+Sub FormatSignificantResult(sheetName As String, startRow As Integer, numRows As Integer, pvalColIndex As Integer, diffColIndex As _     Integer)
+- Formats a cell value containing a significant result as XX%* (for example 10%*)
+- Param - sheetName : The name of the sheet to be processed as a String 
+- Param - startRow : The row number of where the data starts as Integer
+- Param - numRows : The number of rows contained in the spreadsheet (or number of rows wished to process). 
+- Param - pvalColIndex : The index of the column containing the p-value as Integer 
+- Param - diffColIndex : The offset from the position of the p-val column to the cell that you wish to format as Integer
+- Precondition: The significant figure is based on proportions 
+- Postcondition: Cells with significant results are formatted to XX%*
+- Return: None
+
 #Usage
+This module can be customized to suit your specific dataset. 
 
 ```
 
