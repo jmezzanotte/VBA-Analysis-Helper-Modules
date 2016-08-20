@@ -57,7 +57,7 @@ Sub main()
 End Sub
 
 ```
-#formatSignificantResults 
+#EPUtilities
 
 #Description 
 I used this module heavily on a project that required an extensive amount of custom graphing. This module is fairly customized
