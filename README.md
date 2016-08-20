@@ -11,6 +11,7 @@ Visual Basic for Applications modules that have assisted me in day-to-day analys
 
 #Package Contents 
 formatSignificantResults.bas
+EpUtilities.bas
 
 
 #formatSignificantResults 
@@ -56,6 +57,17 @@ Sub main()
 End Sub
 
 ```
+#formatSignificantResults 
+
+#Description 
+I used this module heavily on a project that required an extensive amount of custom graphing. This module is fairly customized
+for to the project I created for, however it can be used when working with any excel dataset. In the future (time permitting) i would like to make this module more robust. 
+
+#Procedures in Module
+- Relabel : Taylored specifically to project tables. It relabels cell headers in the table. Source code could be modified to include or change out labeling values. 
+- ConvertPercent : Calculates table percentages(either column or row based on need) 
+- epChart : Places customized chart based on selected cell range( this chart was customized for the project, source code could be modified to suite your needs). 
+- LabelValues : used to apply custom value labels to bars. 
 
 # Collaborators 
 John Mezzanotte 
