@@ -108,7 +108,7 @@ Sub DoRelabel()
 ![relabel_raw](https://cloud.githubusercontent.com/assets/11713216/18944259/4c0b2ffa-85d9-11e6-9abc-b18ca1b9ece7.png)
 
 # Calling DoRelabel
-![relabel_after_proc](https://cloud.githubusercontent.com/assets/11713216/18944344/d23ddfbe-85d9-11e6-8095-071ff8bfb06e.png)
+![relabel_after_proc](https://cloud.githubusercontent.com/assets/11713216/18944368/0413e42a-85da-11e6-9e42-f616fe154170.png)
 
 # Collaborators 
 John Mezzanotte 
