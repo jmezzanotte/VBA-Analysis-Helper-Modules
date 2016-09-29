@@ -65,19 +65,21 @@ for to the project I created for, however it can be used when working with any e
 
 #Procedures in Module
 #Relabel 
--Description :This procedure relabels cell headers in a given table. The procedure takes a sigle argument which is basically a hashtable that maps raw column values to the new column labels. In VBA this procedure is expecting a dictionary object that maps old labels to new labels.
+- Description :This procedure relabels cell headers in a given table. The procedure takes a sigle argument which is basically a hashtable that maps raw column values to the new column labels. In VBA this procedure is expecting a dictionary object that maps old labels to new labels.
 
-#GetPercent 
--Description: Calculates table percentages(either column or row based on need). Provide the function a range of cells to use as numerators and a second argument which is a cell to be used as a denominator for all the numerators provided in the first argument. Basically it will calcuate row or column percents based on the cell ranges passed to the function. It provides a method to calculate row and column percents in a table without having to manaully enter absolute cell ranges using in cell formulas.
+#GetPercent Sub GetPercent(ByVal row As Range, ByVal total As Range)
 
-- Function Header: Sub GetPercent(ByVal row As Range, ByVal total As Range)
+- Description: Calculates table percentages(either column or row based on need). Provide the function a range of cells to use as numerators and a second argument which is a cell to be used as a denominator for all the numerators provided in the first argument. Basically it will calcuate row or column percents based on the cell ranges passed to the function. It provides a method to calculate row and column percents in a table without having to manaully enter absolute cell ranges using in cell formulas.
 - Param row :Row of valuse to use as a numerator 
 - Param total : Single value to use a denominator for all values in the cell range speficied by row.
 
-#epChart
+#epChart Function hHeader:Sub epChart(sheetName As String, ByRef dataRange As Range, axisFontSize, gapWidth As Integer)
 
 - Description :Places customized chart based on selected cell range( this chart was customized for the project, source code could be modified to suite your needs). 
-- Function hHeader:Sub epChart(sheetName As String, ByRef dataRange As Range, axisFontSize, gapWidth As Integer)
+- Param sheetName
+- Param dataRange
+- Param axisFontSize
+- Param gapWidth 
 
 - AssignDataLabelValues : This function can be used to place custom data labels on graph bars. This function takes in a chart series number, as well as the range of values to apply to that series number display the custom labels. Use of this function replaces the need to hand map custom data labels to graph bars.
 
