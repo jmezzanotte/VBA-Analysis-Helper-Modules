@@ -66,7 +66,11 @@ for to the project I created for, however it can be used when working with any e
 #Procedures in Module
 - Relabel : This procedure relabels cell headers in a given table. The procedure takes a sigle argument which is basically a hashtable that maps raw column values to the new column labels. In VBA this procedure is expecting a dictionary object that maps old labels to new labels.
 
-- GetPercent : Calculates table percentages(either column or row based on need). Provide the function a range of cells to use as numerators and a second argument which is a cell to be used as a denominator for all the numerators provided in the first argument. Basically it will calcuate row or column percents based on the cell ranges passed to the function. It provides a method to calculate row and column percents in a table without having to manaully enter absolute cell ranges using in cell formulas. 
+- GetPercent : Calculates table percentages(either column or row based on need). Provide the function a range of cells to use as numerators and a second argument which is a cell to be used as a denominator for all the numerators provided in the first argument. Basically it will calcuate row or column percents based on the cell ranges passed to the function. It provides a method to calculate row and column percents in a table without having to manaully enter absolute cell ranges using in cell formulas.
+#Specification for GetPercent Function
+Sub GetPercent(ByVal row As Range, ByVal total As Range)
+-Param row - Row of valuse to use as a numerator 
+-Param total - Single value to use a denominator for all values in the cell range speficied by row.
 
 - epChart : Places customized chart based on selected cell range( this chart was customized for the project, source code could be modified to suite your needs). 
 
