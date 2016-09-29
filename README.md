@@ -75,6 +75,35 @@ for to the project I created for, however it can be used when working with any e
 # GraphUtilities Usage
 I have included a module in this package called Main_demo.bas as a demonstration of how I have used these custom graph function from GraphUtilities in the past on projects. Below is the code from that file as well as some screen shots of what the data looks like before and after the functions have been applied to the data. 
 
+- Use of the Relabel function 
+In the Main_demo.bas file I wrote a function that calls the Relabel function from the GraphUtilities module. Below is a sample of the code I have used in the past to work with it. Below I create a dictionary object that maps old column and row labels to new labels and then I pass that object over to the Relabel function. I have mapped this function to a key stroke as well so it is easy to use while working in excel. 
+
+```
+Option Explicit
+
+Sub DoRelabel()
+    
+    Dim labels As Object
+    Set labels = CreateObject("Scripting.Dictionary")
+    
+    
+    labels.Add "TestCol1", "Column 1"
+    labels.Add "TestCol2", "Column 2"
+    labels.Add "TestCol3", "Column 3"
+    labels.Add "TestCol4", "Column 4"
+    
+    labels.Add "row_labels", ""
+    
+    labels.Add "variable1", "Demo Var 1"
+    labels.Add "variable2", "Demo Var 2"
+    labels.Add "variable3", "Demo Var 3"
+    labels.Add "variable4", "Demo Var 4"
+    labels.Add "variable5", "Demo Var 5"
+    
+    Call Relabel(labels)
+
+
+```
 
 # Collaborators 
 John Mezzanotte 
