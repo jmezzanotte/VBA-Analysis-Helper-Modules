@@ -10,8 +10,8 @@ John Mezzanotte
 Visual Basic for Applications modules that have assisted me in day-to-day analysis tasks. Most of these modules can be downloaded and used for general purpose analysis and graphing tasks within excel.
 
 #Package Contents 
--formatSignificantResults.bas
--GraphUtilities.bas
+- formatSignificantResults.bas
+- GraphUtilities.bas
 
 
 #formatSignificantResults 
@@ -69,10 +69,10 @@ for to the project I created for, however it can be used when working with any e
 
 #GetPercent 
 -Descriptioon: Calculates table percentages(either column or row based on need). Provide the function a range of cells to use as numerators and a second argument which is a cell to be used as a denominator for all the numerators provided in the first argument. Basically it will calcuate row or column percents based on the cell ranges passed to the function. It provides a method to calculate row and column percents in a table without having to manaully enter absolute cell ranges using in cell formulas.
----
+
 -Function Header: Sub GetPercent(ByVal row As Range, ByVal total As Range)
--Param row - Row of valuse to use as a numerator 
--Param total - Single value to use a denominator for all values in the cell range speficied by row.
+-Param row :Row of valuse to use as a numerator 
+-Param total : Single value to use a denominator for all values in the cell range speficied by row.
 
 #epChart
 -Description :Places customized chart based on selected cell range( this chart was customized for the project, source code could be modified to suite your needs). 
