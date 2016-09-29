@@ -83,7 +83,13 @@ for to the project I created for, however it can be used when working with any e
 - **Param axisFontSize**: Font size of the graph axises.
 - **Param gapWidth**: Width between column bars.
 
-- AssignDataLabelValues : This function can be used to place custom data labels on graph bars. This function takes in a chart series number, as well as the range of values to apply to that series number display the custom labels. Use of this function replaces the need to hand map custom data labels to graph bars.
+# AssignDataLabelValues 
+
+**Sub assignDataLabelValues(series As Integer, seriesRange As Range)**
+
+- **Description**: This function can be used to place custom data labels on graph bars. This function takes in a chart series number, as well as the range of values to apply to that series number display the custom labels. Use of this function replaces the need to hand map custom data labels to graph bars.
+- **Param series**:
+- **Param seriesRange**:
 
 # GraphUtilities Usage
 I have included a module in this package called Main_demo.bas as a demonstration of how I have used these custom graph function from GraphUtilities in the past on projects. Below is the code from that file as well as some screen shots of what the data looks like before and after the functions have been applied to the data. 
