@@ -7,11 +7,11 @@ John Mezzanotte
 1/3/2016
 
 # Overview
-Visual Basic for Applications modules that have assisted me in day-to-day analysis tasks. Some of these modules may be used for general purposes and other modules are very custom to specific ananlysis tasks I have had. 
+Visual Basic for Applications modules that have assisted me in day-to-day analysis tasks. Most of these modules can be downloaded and used for general purpose analysis and graphing tasks within excel.
 
 #Package Contents 
-formatSignificantResults.bas
-EpUtilities.bas
+-formatSignificantResults.bas
+-GraphUtilities.bas
 
 
 #formatSignificantResults 
@@ -57,17 +57,20 @@ Sub main()
 End Sub
 
 ```
-#EPUtilities
+#GraphUtilities
 
 #Description 
 I used this module heavily on a project that required an extensive amount of custom graphing. This module is fairly customized
-for to the project I created for, however it can be used when working with any excel dataset. In the future (time permitting) i would like to make this module more robust. 
+for to the project I created for, however it can be used when working with any excel dataset. It creates a custom stacked 100% stacked column chart with a data table at the foot of the graph. In the future I would like to make this module more customizable by expanding the API to allow for more options on the graph. 
 
 #Procedures in Module
-- Relabel : Taylored specifically to project tables. It relabels cell headers in the table. Source code could be modified to include or change out labeling values. 
-- ConvertPercent : Calculates table percentages(either column or row based on need) 
+- Relabel : This procedure relabels cell headers in a given table. The procedure takes a sigle argument which is basically a hashtable that maps raw column values to the new column labels. In VBA this procedure is expecting a dictionary object that maps old labels to new labels.
+
+- GetPercent : Calculates table percentages(either column or row based on need). Provide the function a range of cells to use as numerators and a second argument which is a cell to be used as a denominator for all the numerators provided in the first argument. Basically it will calcuate row or column percents based on the cell ranges passed to the function. It provides a method to calculate row and column percents in a table without having to manaully enter absolute cell ranges using in cell formulas. 
+
 - epChart : Places customized chart based on selected cell range( this chart was customized for the project, source code could be modified to suite your needs). 
-- LabelValues : used to apply custom value labels to bars. 
+
+- AssignDataLabelValues : This function can be used to place custom data labels on graph bars. This function takes in a chart series number, as well as the range of values to apply to that series number display the custom labels. Use of this function replaces the need to hand map custom data labels to graph bars.
 
 # Collaborators 
 John Mezzanotte 
