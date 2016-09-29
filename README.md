@@ -69,7 +69,8 @@ for to the project I created for, however it can be used when working with any e
 
 #GetPercent 
 -Descriptioon: Calculates table percentages(either column or row based on need). Provide the function a range of cells to use as numerators and a second argument which is a cell to be used as a denominator for all the numerators provided in the first argument. Basically it will calcuate row or column percents based on the cell ranges passed to the function. It provides a method to calculate row and column percents in a table without having to manaully enter absolute cell ranges using in cell formulas.
--Function Header: - Sub GetPercent(ByVal row As Range, ByVal total As Range)
+---
+-Function Header: Sub GetPercent(ByVal row As Range, ByVal total As Range)
 -Param row - Row of valuse to use as a numerator 
 -Param total - Single value to use a denominator for all values in the cell range speficied by row.
 
