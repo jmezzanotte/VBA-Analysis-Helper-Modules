@@ -154,6 +154,13 @@ End Sub
 
 ```
 
+#Before Running Convert Percent
+![percent_raw](https://cloud.githubusercontent.com/assets/11713216/18976161/a8c4ca54-8664-11e6-8141-98e71c796a40.png)
+![percent_raw_dialog](https://cloud.githubusercontent.com/assets/11713216/18976164/aec5121a-8664-11e6-850a-d685e656e542.png)
+![percent_raw_dialog_2](https://cloud.githubusercontent.com/assets/11713216/18976169/b0e413e8-8664-11e6-80d2-69cfd465b472.png)
+
+#After Running Convert Percent
+![percent_converted](https://cloud.githubusercontent.com/assets/11713216/18976176/b926084a-8664-11e6-85a0-2a35fcbcc108.png)
 
 # Collaborators 
 John Mezzanotte 
