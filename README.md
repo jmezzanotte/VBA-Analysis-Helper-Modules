@@ -91,6 +91,7 @@ Sub DoRelabel()
     labels.Add "TestCol2", "Column 2"
     labels.Add "TestCol3", "Column 3"
     labels.Add "TestCol4", "Column 4"
+    labels.Add "TestCol5", "Column 5"
     
     labels.Add "row_labels", ""
     
