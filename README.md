@@ -75,7 +75,7 @@ for to the project I created for, however it can be used when working with any e
 # GraphUtilities Usage
 I have included a module in this package called Main_demo.bas as a demonstration of how I have used these custom graph function from GraphUtilities in the past on projects. Below is the code from that file as well as some screen shots of what the data looks like before and after the functions have been applied to the data. 
 
-- Use of the Relabel function 
+# Use of the Relabel function 
 In the Main_demo.bas file I wrote a function that calls the Relabel function from the GraphUtilities module. Below is a sample of the code I have used in the past to work with it. Below I create a dictionary object that maps old column and row labels to new labels and then I pass that object over to the Relabel function. I have mapped this function to a key stroke as well so it is easy to use while working in excel. 
 
 ```
@@ -110,6 +110,31 @@ Sub DoRelabel()
 
 # Calling DoRelabel
 ![relabel_after_proc](https://cloud.githubusercontent.com/assets/11713216/18944395/333d665e-85da-11e6-8669-a6b831910af2.png)
+
+
+#Use of the GetPercent Function
+In the Main_demo.bas file, I've also included a procedure for using the GetPercent function contained in the GraphUtilities module. This is helpful when you need to quickly calculate row are column percents in a table and don't want to manually enter cell formulas by hand with absolute denominators. Here in example of how I have used the GetPercent function with code taken from the Main_demo file.
+
+```
+Sub ConvertPercent()
+    
+    On Error GoTo Handler
+    
+    Dim numRange, denomRange As Range
+    Dim i As Variant
+    Set numRange = Application.InputBox(prompt:="Select row with numerator values.", Type:=8)
+    Set denomRange = Application.InputBox(prompt:="Select row with total(denominator)", Type:=8)
+    
+
+    Call GetPercent(numRange, denomRange)
+
+Handler:
+    Exit Sub
+    
+End Sub
+
+```
+
 
 # Collaborators 
 John Mezzanotte 
