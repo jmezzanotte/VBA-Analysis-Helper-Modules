@@ -72,16 +72,16 @@ for to the project I created for, however it can be used when working with any e
 **Sub GetPercent(ByVal row As Range, ByVal total As Range)**
 
 - **Description**: Calculates table percentages(either column or row based on need). Provide the function a range of cells to use as numerators and a second argument which is a cell to be used as a denominator for all the numerators provided in the first argument. Basically it will calcuate row or column percents based on the cell ranges passed to the function. It provides a method to calculate row and column percents in a table without having to manaully enter absolute cell ranges using in cell formulas.
-- **Param**: row :Row of valuse to use as a numerator 
-- **Param**: total : Single value to use a denominator for all values in the cell range speficied by row.
+- **Param row** :Row of valuse to use as a numerator 
+- **Param total** : Single value to use a denominator for all values in the cell range speficied by row.
 
 #epChart 
 **Sub epChart(sheetName As String, ByRef dataRange As Range, axisFontSize, gapWidth As Integer)**
 - **Description**:Places customized chart based on selected cell range( this chart was customized for the project, source code could be modified to suite your needs). 
-- **Param**: sheetName
-- **Param**: dataRange
-- **Param**: axisFontSize
-- **Param**: gapWidth 
+- **Param sheetName**: Name of the sheet where the data is located and the location the graph will be placed.
+- **Param dataRange**: Cell range of the data to be charted.
+- **Param axisFontSize**: Font size of the graph axises.
+- **Param gapWidth**: Width between column bars.
 
 - AssignDataLabelValues : This function can be used to place custom data labels on graph bars. This function takes in a chart series number, as well as the range of values to apply to that series number display the custom labels. Use of this function replaces the need to hand map custom data labels to graph bars.
 
