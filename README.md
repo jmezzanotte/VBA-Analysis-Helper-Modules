@@ -73,13 +73,13 @@ for to the project I created for, however it can be used when working with any e
 - Param row :Row of valuse to use as a numerator 
 - Param total : Single value to use a denominator for all values in the cell range speficied by row.
 
-#epChart Function hHeader:Sub epChart(sheetName As String, ByRef dataRange As Range, axisFontSize, gapWidth As Integer)
-
-- Description :Places customized chart based on selected cell range( this chart was customized for the project, source code could be modified to suite your needs). 
-- Param sheetName
-- Param dataRange
-- Param axisFontSize
-- Param gapWidth 
+#epChart 
+**Sub epChart(sheetName As String, ByRef dataRange As Range, axisFontSize, gapWidth As Integer)**
+- **Description**:Places customized chart based on selected cell range( this chart was customized for the project, source code could be modified to suite your needs). 
+- **Param**: sheetName
+- **Param**: dataRange
+- **Param**: axisFontSize
+- **Param**: gapWidth 
 
 - AssignDataLabelValues : This function can be used to place custom data labels on graph bars. This function takes in a chart series number, as well as the range of values to apply to that series number display the custom labels. Use of this function replaces the need to hand map custom data labels to graph bars.
 
