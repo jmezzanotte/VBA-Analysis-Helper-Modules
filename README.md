@@ -162,6 +162,33 @@ End Sub
 #After Running Convert Percent
 ![percent_converted](https://cloud.githubusercontent.com/assets/11713216/18976176/b926084a-8664-11e6-85a0-2a35fcbcc108.png)
 
+#Use of epChart Function
+In the Main_demo.bas file, I have also included a function that I have used in the past to use the epChart function. I have included an example that code below: 
+
+'''
+Sub placeEPChart()
+    
+    ' Use this procedure to write code to get percents. Run the code from this
+    ' procedure
+
+    Dim wb As Workbook
+    Dim ws As Worksheet
+    Dim chartRange As Range
+    Set chartRange = Application.InputBox(prompt:="Select data range to graph.", Type:=8)
+ 
+
+    Call EPUtilities.epChart(Application.ActiveSheet.Name, chartRange, 14, 50)
+
+End Sub
+'''
+
+#Before placeEPChart
+
+
+
+#After placeEPChart
+
+
 # Collaborators 
 John Mezzanotte 
 
