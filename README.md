@@ -88,8 +88,8 @@ for to the project I created for, however it can be used when working with any e
 **Sub assignDataLabelValues(series As Integer, seriesRange As Range)**
 
 - **Description**: This function can be used to place custom data labels on graph bars. This function takes in a chart series number, as well as the range of values to apply to that series number display the custom labels. Use of this function replaces the need to hand map custom data labels to graph bars.
-- **Param series**:
-- **Param seriesRange**:
+- **Param series**: Number of the data series you are applying labels to.
+- **Param seriesRange**: The range of data that holds the data label values.
 
 # GraphUtilities Usage
 I have included a module in this package called Main_demo.bas as a demonstration of how I have used these custom graph function from GraphUtilities in the past on projects. Below is the code from that file as well as some screen shots of what the data looks like before and after the functions have been applied to the data. 
@@ -188,7 +188,26 @@ End Sub
 #After placeEpChart
 ![graph_function_graph_placed](https://cloud.githubusercontent.com/assets/11713216/19243485/b6d6e31e-8ecc-11e6-8f84-9ec3eed453ff.png)
 
+#Use of the assignDataLabelsValue function 
+I have included code below called LabelValues that I have used to implement the assignDataLabelsValue procedure in the past. I typically 
+assign these functions to keystrokes for easy use in excel. 
 
+```
+Sub LabelValues()
+    On Error GoTo Handler
+    
+    Dim labelRange As Range
+    Dim seriesNum As Integer
+    seriesNum = Application.InputBox("Enter series num", Type:=1)
+    Set labelRange = Application.InputBox("Select the range that holds label values", Type:=8)
+    Call assignDataLabelValues(seriesNum, labelRange)
+
+Handler:
+    ' gracefully exit this procedure
+    Exit Sub
+    
+End Sub
+```
 
 # Collaborators 
 John Mezzanotte 
