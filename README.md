@@ -208,9 +208,13 @@ Handler:
     
 End Sub
 ```
-
+#Specify Series Number
 ![custom_data_labels](https://cloud.githubusercontent.com/assets/11713216/19245252/f13dd3ac-8ed4-11e6-97ba-52571ec36085.png)
+
+#Specify Range of Values to Use
 ![custom_data_labels_range_select](https://cloud.githubusercontent.com/assets/11713216/19245257/f4969336-8ed4-11e6-8822-5c93dc6c4be0.png)
+
+#Lables Applied
 ![custom_data_labels_applied](https://cloud.githubusercontent.com/assets/11713216/19245261/f7914324-8ed4-11e6-8131-9aaf63975f2d.png)
 ![custom_data_labels_fishished](https://cloud.githubusercontent.com/assets/11713216/19245270/fac7ad12-8ed4-11e6-97fe-2bb7d6fe1cb4.png)
 
