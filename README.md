@@ -165,7 +165,7 @@ End Sub
 #Use of epChart Function
 In the Main_demo.bas file, I have also included a function that I have used in the past to use the epChart function. I have included an example that code below: 
 
-'''
+```
 Sub placeEPChart()
     
     ' Use this procedure to write code to get percents. Run the code from this
@@ -180,13 +180,14 @@ Sub placeEPChart()
     Call EPUtilities.epChart(Application.ActiveSheet.Name, chartRange, 14, 50)
 
 End Sub
-'''
+```
 
 #Before placeEPChart
+![graph_function_select](https://cloud.githubusercontent.com/assets/11713216/19243479/b34ebc6c-8ecc-11e6-9779-b9e6aa8bdbd0.png)
 
+#After placeEpChart
+![graph_function_graph_placed](https://cloud.githubusercontent.com/assets/11713216/19243485/b6d6e31e-8ecc-11e6-8f84-9ec3eed453ff.png)
 
-
-#After placeEPChart
 
 
 # Collaborators 
