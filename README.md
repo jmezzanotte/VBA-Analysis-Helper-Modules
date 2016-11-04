@@ -76,12 +76,13 @@ for to the project I created for, however it can be used when working with any e
 - **Param total** : Single value to use a denominator for all values in the cell range speficied by row.
 
 #epChart 
-**Sub epChart(sheetName As String, ByRef dataRange As Range, axisFontSize, gapWidth As Integer)**
+**Sub epChart(sheetName As String, ByRef dataRange As Range, axisFontSize, gapWidth As Integer, majorAxesUnit)**
 - **Description**:Places customized chart based on selected cell range( this chart was customized for the project, source code could be modified to suite your needs). 
 - **Param sheetName**: Name of the sheet where the data is located and the location the graph will be placed.
 - **Param dataRange**: Cell range of the data to be charted.
 - **Param axisFontSize**: Font size of the graph axises.
 - **Param gapWidth**: Width between column bars.
+- **Param majorAxesUnit**: major axes value for the primary chart axes
 
 # AssignDataLabelValues 
 
@@ -176,8 +177,9 @@ Sub placeEPChart()
     Dim chartRange As Range
     Set chartRange = Application.InputBox(prompt:="Select data range to graph.", Type:=8)
  
-
-    Call EPUtilities.epChart(Application.ActiveSheet.Name, chartRange, 14, 50)
+    
+    Call EPUtilities.epChart(sheetName:=Application.ActiveSheet.Name, dataRange:=chartRange, _
+        axisFontSize:=14, gapWidth:=50, majorAxesUnit:=0.2)
 
 End Sub
 ```
