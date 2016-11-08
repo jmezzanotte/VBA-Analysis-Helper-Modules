@@ -76,13 +76,18 @@ for to the project I created for, however it can be used when working with any e
 - **Param total** : Single value to use a denominator for all values in the cell range speficied by row.
 
 #epChart 
-**Sub epChart(sheetName As String, ByRef dataRange As Range, axisFontSize, gapWidth As Integer, majorAxesUnit)**
+**Sub epChart(sheetName As String, ByRef dataRange As Range, axisFontSize, gapWidth As Integer, majorAxesUnit As Double, chartArea Outline As Integer, Optional chartHeight As Double = 4, Optional chartWidth As Double = 5, Optional chartTitle As String = "Title", Optional titleFontSize As Integer = 18)**
 - **Description**:Places customized chart based on selected cell range( this chart was customized for the project, source code could be modified to suite your needs). 
 - **Param sheetName**: Name of the sheet where the data is located and the location the graph will be placed.
 - **Param dataRange**: Cell range of the data to be charted.
 - **Param axisFontSize**: Font size of the graph axises.
 - **Param gapWidth**: Width between column bars.
 - **Param majorAxesUnit**: major axes value for the primary chart axes
+- **Param chartAreaOutline**: Integer value for the type of chart outline to include. 
+- **Optional Param chartHeight**: Double, height of chart, default = 4 
+- **Optional Param chartWidth**: Double, width of chart, default = 5 
+- **Optional Param graphTitle**: String, default = "Title"
+- **Optional Param titleFontSize**:Integer, font size used for title, default = 18
 
 # AssignDataLabelValues 
 
