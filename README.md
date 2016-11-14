@@ -99,6 +99,12 @@ for to the project I created for, however it can be used when working with any e
 - **Param chartObjNum**: Integer that is the index number of the chart on a given sheet. Default value is 1, which will reference the  
                          first chart on a sheet. This parameter is used to target a specific chart when the procedure is being used 
                          on a sheet with multiple chart objects.
+                         
+# ChartObjectCount 
+
+**Function ChartObjectCount()**
+- **Description**: This function is used to count the number of chart objects on a sheet. This utility function is useful when used with the assignDataLabelValues procedure. Because the assignDataLabelValues procedure requires a index value of the chart being referenced it is import we always have an idea of how many charts are on a sheet. Using this function can help us to identify the correct chart for value labels when we have multiple charts. 
+**return**: count as Long
 
 # GraphUtilities Usage
 I have included a module in this package called Main_demo.bas as a demonstration of how I have used these custom graph function from GraphUtilities in the past on projects. Below is the code from that file as well as some screen shots of what the data looks like before and after the functions have been applied to the data. 
