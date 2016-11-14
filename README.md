@@ -12,7 +12,7 @@ Visual Basic for Applications modules that have assisted me in day-to-day analys
 #Package Contents 
 - formatSignificantResults.bas
 - GraphUtilities.bas
-- Main_demo.bas
+- GraohUtilitiesMain.bas
 
 #formatSignificantResults 
 
@@ -234,6 +234,9 @@ End Sub
 ![custom_data_labels_applied](https://cloud.githubusercontent.com/assets/11713216/19245261/f7914324-8ed4-11e6-8131-9aaf63975f2d.png)
 ![custom_data_labels_fishished](https://cloud.githubusercontent.com/assets/11713216/19245270/fac7ad12-8ed4-11e6-97fe-2bb7d6fe1cb4.png)
 
+
+#GraphUtilitiesMain.bas
+This is a VBA module that demonstrates how I have used the procedures in the GraphUtilities module in my work. Feel to download this code and use it as a start point in your own work. 
 
 
 # Collaborators 
